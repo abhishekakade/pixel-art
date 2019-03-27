@@ -77,6 +77,10 @@ table {
   /*   transition: all 5s; */
 }
 
+#table-container {
+  min-height: 500px;
+}
+
 td {
   border: 1px solid #000;
   height: 15px;
@@ -110,6 +114,12 @@ td {
 .btn-sm:focus {
   background: #303;
   color: #fff;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .foot {
