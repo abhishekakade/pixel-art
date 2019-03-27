@@ -16,6 +16,7 @@ body {
 
 .container-fluid {
   padding: 1em;
+  min-height: 90vh;
 }
 
 h1 {
@@ -75,10 +76,6 @@ table {
   background: #fff;
   box-shadow: 0 0 20px #505;
   /*   transition: all 5s; */
-}
-
-#table-container {
-  min-height: 500px;
 }
 
 td {
