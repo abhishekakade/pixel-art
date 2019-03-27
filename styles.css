@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Gugi|New+Rocker");
+
+html {
+  cursor: url("https://s26.postimg.cc/kkwfjk4mx/cuursor1-theme-36.png"), pointer;
+  overflow-y: scroll;
+}
+
+body {
+  background: #eee;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-fluid {
+  padding: 1em;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Gugi", cursive;
+  background: linear-gradient(to right, #000, #404, #000);
+  color: #eee;
+  border-radius: 20px;
+  width: 80%;
+  margin: 0.1em auto 0.5em auto;
+  text-shadow: 0 0 20px #000;
+  padding: 5px;
+  box-shadow: 0 5px 15px 0 #111;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+}
+
+form {
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-family: "Gugi", cursive;
+  font-size: 1.25rem;
+}
+
+.numbers {
+  width: 4rem;
+  border: 2px solid #000;
+  outline: 0 none;
+  border-radius: 5px;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+#hr-style {
+  width: 60%;
+  height: 5px;
+  background: #000;
+  border-width: 0;
+}
+
+.color-button {
+  width: 3.2em;
+  height: 1.3em;
+  border-color: #000;
+  border-width: 1px;
+  vertical-align: middle;
+  margin: 0.5em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+table {
+  margin: 1em auto 3em auto;
+  border-spacing: 0;
+  border: 2px solid black;
+  background: #fff;
+  box-shadow: 0 0 20px #505;
+  /*   transition: all 5s; */
+}
+
+td {
+  border: 1px solid #000;
+  height: 15px;
+  width: 15px;
+  transition: all 0.3s;
+}
+
+/* [contenteditable] {
+  caret-color: red;
+} */
+
+.btn-sm {
+  background: linear-gradient(to bottom, #000, #404);
+  color: #eee;
+  vertical-align: middle;
+  font-size: 1em;
+  margin-left: 0.5em;
+}
+
+.btn-sm:hover {
+  background: linear-gradient(to top, #000, #404);
+  color: #eee;
+}
+
+.btn-sm:active {
+  background: linear-gradient(to top, #000, #404);
+  color: #eee;
+  /*   transform: translateY(1px); */
+}
+
+.btn-sm:focus {
+  background: #303;
+  color: #fff;
+}
+
+.foot {
+  color: #fff;
+  margin: auto;
+  width: 100%;
+}
+
+.footer-text {
+  font-family: "Gugi", cursive;
+  margin: 0 auto;
+  padding: 0;
+  color: #ddd;
+  background: linear-gradient(to right, #000, #404, #000);
+  width: 75%;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  vertical-align: center;
+  padding: 0.2em;
+}
+
+.profile-link {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.profile-link:hover {
+  color: #eee;
+  text-decoration: none;
+}
+
+.arrow {
+  font-size: 2em;
+  vertical-align: -5px;
+}
+
+#table-container {
+  min-height: 35vh;
+}
