@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Gugi|New+Rocker");
+@import url("https://fonts.googleapis.com/css?family=Gugi");
 
 html {
-  cursor: url("https://s26.postimg.cc/kkwfjk4mx/cuursor1-theme-36.png"), pointer;
   overflow-y: scroll;
 }
 
@@ -21,7 +20,7 @@ body {
 
 h1 {
   text-align: center;
-  font-family: "Gugi", cursive;
+  font-family: "Gugi", "Lucida Sans", "Lucida Sans Regular", sans-serif;
   background: linear-gradient(to right, #000, #404, #000);
   color: #eee;
   border-radius: 20px;
@@ -38,7 +37,7 @@ form {
   text-align: center;
   display: block;
   margin: auto;
-  font-family: "Gugi", cursive;
+  font-family: "Gugi", sans-serif;
   font-size: 1.25rem;
 }
 
@@ -126,7 +125,7 @@ footer {
 }
 
 .footer-text {
-  font-family: "Gugi", cursive;
+  font-family: "Gugi", sans-serif;
   margin: 0 auto;
   padding: 0;
   color: #ddd;
@@ -141,6 +140,7 @@ footer {
 .profile-link {
   color: #ddd;
   text-decoration: none;
+  font-family: "Gugi", sans-serif;
 }
 
 .profile-link:hover {
@@ -151,8 +151,21 @@ footer {
 .arrow {
   font-size: 2em;
   vertical-align: -5px;
+  font-family: "Gugi", sans-serif;
+}
+
+.footer-text-gugi {
+  font-family: "Gugi", sans-serif;
 }
 
 #table-container {
   min-height: 35vh;
+}
+table:hover {
+  cursor: pointer;
+}
+
+.lnr-laptop {
+  color: #cccccc;
+  font-size: 1rem;
 }
