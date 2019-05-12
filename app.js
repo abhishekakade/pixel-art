@@ -18,8 +18,6 @@ $(document).ready(function() {
     let addCells = function() {
       for (c = 1; c <= cols; c++) {
         $("tr:last").append("<td></td>");
-        // $("td").css("transition", "all 1s");
-        // $("td").fadeIn();
       }
     };
 
@@ -35,7 +33,6 @@ $(document).ready(function() {
   /* Try adding IIFE with setTimeOut func for animation */
 
   CONTAINER.on("click", "#reset", resetGrid);
-
   CONTAINER.on("click", "#submit-btn", newGrid);
 
   TABLE.on("click", "td", function() {
