@@ -259,7 +259,7 @@ table:hover {
 @font-face {
   font-family: "icomoon";
   font-display: swap;
-  src: url("./icomoon.ttf") format("truetype");
+  src: url("../icomoon.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
