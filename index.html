@@ -1,66 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>Pixel Art Maker</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="Description" content="A Pixel Art app made using jQuery" />
+  <head>
+    <title>Pixel Art Maker</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="A Pixel Art app made using jQuery" />
+    <link rel="icon" href="./favicon.ico" sizes="any" type="image/ico">
+    <!-- <link rel="preload" as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="crossorigin="anonymous"
+      />
+    <link rel="preload" as="style" href="styles.css" />
+    <link rel="preload" as="font" type="font/woff2"
+      href="https://fonts.gstatic.com/s/firasans/v9/va9E4kDNxMZdWfMOD5Vvl4jL.woff2"
+      crossorigin="anonymous"> -->
+  </head>
 
-  <link rel="icon" href="./favicon.ico" sizes="any" type="image/ico">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
-
-  <link rel="preload" as="font" href="https://fonts.gstatic.com/s/firasans/v9/va9E4kDNxMZdWfMOD5Vvl4jL.woff2"
-    crossorigin="anonymous">
-
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <div class="container-fluid">
-    <h1>PIXEL ART</h1>
-    <form method="get">
-
-      <div class="responsive">
-        <b>Rows</b>
-        <input aria-label="Number of rows you want in table" class="numbers" id="rows" type="number" min="01" max="64" value="7" required />
-        <b>Columns</b>
-        <input aria-label="Number of columns you want in table" class="numbers" id="cols" type="number" min="01" max="64" value="7" required />
+  <body>
+    <div class="container-fluid">
+      <h1>PIXEL ART</h1>
+      <form method="get">
+        <div class="responsive">
+          <b>Rows</b>
+          <input aria-label="Number of rows you want in table" class="numbers"
+            id="rows" type="number" min="01" max="64"
+            value="7" required />
+          <b>Columns</b>
+          <input aria-label="Number of columns you want in table"
+            class="numbers" id="cols" type="number" min="01"
+            max="64" value="7" required />
+        </div>
+        <div class="responsive">
+          <input aria-label="Submit button to draw or reset the table"
+            type="button" class="btn btn-sm" value="Submit"
+            id="submit-btn" />
+          <input aria-label="Delete button to delete the table" type="button"
+            class="btn btn-sm" value="Delete"
+            id="reset" />
+        </div>
+        <div class="color-picker">
+          <hr id="hr-style" />
+          <input aria-label="Color picker button to choose color of choice.
+            Default is dark purple" type="color"
+            class="color-button" id="colors" value="#440044" />
+        </div>
+      </form>
+      <div id="table-container">
+        <table id="grid"></table>
       </div>
-
-      <div class="responsive">
-        <input aria-label="Submit button to draw or reset the table" type="button" class="btn btn-sm" value="Submit" id="submit-btn" />
-        <input aria-label="Delete button to delete the table" type="button" class="btn btn-sm" value="Delete" id="reset" />
-      </div>
-        
-      <div class="color-picker">
-        <hr id="hr-style" />
-          <input aria-label="Color picker button to choose color of choice. Default is dark purple" type="color" class="color-button" id="colors" value="#440044" />
-      </div>
-    </form>
-
-    <div id="table-container">
-      <table id="grid"></table>
     </div>
-  </div>
 
-  <footer>
-    <div class="text-center foot py-0">
-      <p class="footer-text">
-        <span class="arrow h4">&lt;</span>&nbsp;&nbsp;&nbsp;Made with&nbsp;&nbsp;<span class="icon-heart"><span
-            class="footer-text-gugi">&nbsp;&nbsp;and&nbsp;&nbsp;</span><span class="icon-desktop"><span
-              class="footer-text-gugi">&nbsp;&nbsp;by</span>
-            <a class="profile-link" target="_blank" rel="noopener"
-              href="https://github.com/abhishekakade">Abhishek</a>&nbsp;<span class="arrow h4">/&gt;</span>
-      </p>
-    </div>
-  </footer>
+    <footer>
+      <div class="text-center foot py-0">
+        <p class="footer-text">
+          <span class="arrow h4">&lt;</span>&nbsp;&nbsp;&nbsp;Made
+          with&nbsp;&nbsp;<span class="icon-heart"><span
+              class="footer-text-gugi">&nbsp;&nbsp;and&nbsp;&nbsp;</span><span
+              class="icon-desktop"><span
+                class="footer-text-gugi">&nbsp;&nbsp;by</span>
+              <a class="profile-link" target="_blank" rel="noopener"
+                href="https://github.com/abhishekakade">Abhishek</a>&nbsp;<span
+                class="arrow h4">/&gt;</span>
+            </p>
+          </div>
+        </footer>
+        <link rel="preload" as="style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="crossorigin="anonymous"
+          />
+        <link rel="preload" as="style" href="styles.css" />
+        <link rel="preload" as="font" type="font/woff2"
+          href="https://fonts.gstatic.com/s/firasans/v9/va9E4kDNxMZdWfMOD5Vvl4jL.woff2"
+          crossorigin="anonymous">
 
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script defer src="app.js"></script>
+        <!-- <script defer
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script> -->
+        <script defer
+          src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="crossorigin="anonymous"></script>
+        <script defer src="app.js"></script>
+      </body>
 
-</body>
-
-</html>
+    </html>

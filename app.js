@@ -5,8 +5,6 @@ $(document).ready(function() {
 
   function resetGrid() {
     TABLE.empty();
-    // $("tr, td").fadeOut("slow");
-    // $("table").hide();
   }
 
   function newGrid(event) {

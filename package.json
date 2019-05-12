@@ -1,0 +1,24 @@
+{
+  "name": "pixel-art",
+  "version": "1.0.0",
+  "description": "You can find the link to the live version of this project here - [Pixel Art Maker](https://abhishekakade.github.io/pixel-art/)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekakade/pixel-art.git"
+  },
+  "author": "Abhishek K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhishekakade/pixel-art/issues"
+  },
+  "homepage": "https://github.com/abhishekakade/pixel-art#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "marked": "^0.6.2",
+    "parcel-bundler": "^1.12.3"
+  }
+}
